@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Chủ</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 header-contact">
+                    <div class=" header-lang pull-left">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <div class="dropdown language">
+                            <button class="btn dropdown-toggle language__btn" type="button" id="menu1" data-toggle="dropdown">English
+                                <span class="fa fa-angle-down"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" href="#">English</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">VietNam</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Chinna</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end .header-lang-->
+                    <div class="header-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+840909090009" class="header-phone__num ">+84 0909090009</a>
+                    </div>
+                    <!--end .header-phone-->
+                </div>
+                <!--end .header-contact-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 visible-md visible-lg visible-sm header-social text-right">
+                    <button type="submit" class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <div class="dropdown sign-in">
+                        <button class="btn dropdown-toggle language__btn" type="button" id="sign-in" data-toggle="dropdown">Sign In
+                            <span class="fa fa-angle-down"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" href="#">Sign In</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Sign Out</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Register</a></li>
+                        </ul>
+                    </div>
+                    <!--end .form-social-->
+
+                    <div class="social-network hidden-sm">
+                        <a href="#" class="social-network__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="social-network__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="#" class="social-network__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <!--end .social-network-->
+                </div>
+                <!--end .header-social-->
+            </div>
+        </div>
+    </div>
+        <!--end .header-top-->
+    <div class=" header-main">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar " role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header ">
+                        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand header-logo__link" href="#"> <img src="images/logo.png" alt="Logo" class="header-logo--size img-responsive" title="Trang chủ"></a>
+                    </div>
+
+                    <!--btn-menu-->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav--line" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav pull-right list-menu">
+                            <li class="item-menu active"><a href="#" class="item-menu__link">Lay out</a></li>
+                            <li class="item-menu"><a href="#" class="item-menu__link">Pages</a></li>
+                            <li class="item-menu"><a href="#" class="item-menu__link">Work</a></li>
+                            <li class="item-menu"><a href="#" class="item-menu__link">Blog</a></li>
+                            <li class="item-menu"><a href="#" class="item-menu__link">Shop</a></li>
+                            <li class="item-menu"><a href="#" class="item-menu__link">Element</a></li>
+                            <li class="item-menu visible-xs" >
+                                <button class="accordion"><a href="#" class="item-menu__link item-menu--signin">Sign In</a></button>
+                                <div class="panel">
+                                    <ul>
+                                        <li><a href="#"  class="item-menu__link">Sign Out</a></li>
+                                        <li><a href="#"  class="item-menu__link">Sign Out</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="item-menu visible-xs">
+                                <div class="input-group form-search">
+                                    <input type="text" class="form-control form-search__input" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn form-search__btn" type="button"><i class="fa fa-search"></i></button>
+                                    </span>
+                                    <script>
+                                        var acc = document.getElementsByClassName("accordion");
+                                        var i;
+
+                                        for (i = 0; i < acc.length; i++) {
+                                            acc[i].onclick = function() {
+                                                this.classList.toggle("active");
+                                                var panel = this.nextElementSibling;
+                                                if (panel.style.maxHeight){
+                                                    panel.style.maxHeight = null;
+                                                } else {
+                                                    panel.style.maxHeight = panel.scrollHeight + "px";
+                                                }
+                                            }
+                                        }
+                                    </script>
+                                </div><!-- /input-group -->
+                            </li>
+                            <li class="item-menu"><a href="#" class="header-quote__link text-center">Get a quote</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!--end .header-logo-->
+</header>
+<!--end header-->
+
+<section id="home-slider">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="#" class="slider-banner__link"><img src="images/banner/slider.png" alt="slider-banner" class="img-responsive"></a>
+            </div>
+
+            <div class="item">
+                <a href="#" class="slider-banner__link"><img src="images/banner/slider.png" alt="slider-banner" class="img-responsive"></a>
+            </div>
+
+            <div class="item">
+                <a href="#" class="slider-banner__link"><img src="images/banner/slider.png" alt="slider-banner" class="img-responsive"></a>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--end .slider-banner-->
+</section>
+<!--end #home-slider-->
+
+<section id="home-mission">
+    <div class="container">
+        <div class="row mission-header">
+            <h2 class="mission-header__title text-center">Our mission</h2>
+            <p class="mission-header__desc text-center">T'll tell you a cleaning secret, one that can help you save time, money, and
+            enhance your sustainability programs. Best of all, it's an easy to imployment,
+            readily avaiable solution.</p>
+        </div>
+        <!--end .mission-header-->
+        
+        <div class="row mission-main">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-sx-12">
+                <div class="item-mission">
+                    <a href="#" class="item-mission__link"></a>
+                    <div class="item-img">
+                        <a href="#" class="item-img__link"><img src="images/top-content/top3.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <!--end .item-img-->
+                    <div class="item-info">
+                        <a href="#" class="item-info__link">We Create Experiences</a>
+                        <p class="item-info__desc">Don't be distracted by criticism. Remember the only taste of success some people.</p>
+                        <a href="#" class="item-info__readmore">Read more</a>
+                    </div>
+                    <!--end .item-info-->
+                </div>
+                <!--end .item-mission-->
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-sx-12">
+                <div class="item-mission">
+                    <a href="#" class="item-mission__link"></a>
+                    <div class="item-img">
+                        <a href="#" class="item-img__link"><img src="images/top-content/top3.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <!--end .item-img-->
+                    <div class="item-info">
+                        <a href="#" class="item-info__link">We Create Experiences</a>
+                        <p class="item-info__desc">Don't be distracted by criticism. Remember the only taste of success some people.</p>
+                        <a href="#" class="item-info__readmore">Read more</a>
+                    </div>
+                    <!--end .item-info-->
+                </div>
+                <!--end .item-mission-->
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-sx-12">
+                <div class="item-mission">
+                    <a href="#" class="item-mission__link"></a>
+                    <div class="item-img">
+                        <a href="#" class="item-img__link"><img src="images/top-content/top3.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <!--end .item-img-->
+                    <div class="item-info">
+                        <a href="#" class="item-info__link">We Create Experiences</a>
+                        <p class="item-info__desc">Don't be distracted by criticism. Remember the only taste of success some people.</p>
+                        <a href="#" class="item-info__readmore">Read more</a>
+                    </div>
+                    <!--end .item-info-->
+                </div>
+                <!--end .item-mission-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--end #home-mission-->
+
+<section id="home-video">
+    <div class="video">
+        <div class="video-img">
+            <img src="images/banner/slide-img2.png" class="img-responsive" alt="video">
+        </div>
+        <button type="button" class=" video__btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i></button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <video width="100%" controls>
+                            <source src="images/aquafina.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end .video-->
+</section>
+<!--end #home-video-->
+
+<section id="home-middle">
+    <div class="container">
+        <div class="row middle">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="item-middle">
+                    <div class="item-middle__icon">
+                        <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <a class="item-middle__link">Customizability</a>
+                    <p class="item-middle__desc">Don't be distracted by criticism. Remember the only taste of success some people.</p>
+                </div>
+                <!--end .item-middle-->
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="item-middle">
+                    <div class="item-middle__icon">
+                        <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <a class="item-middle__link">Customizability</a>
+                    <p class="item-middle__desc">Don't be distracted by criticism. Remember the only taste of success some people.</p>
+                </div>
+                <!--end .item-middle-->
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="item-middle">
+                    <div class="item-middle__icon">
+                        <i class="fa fa-tachometer  fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <a class="item-middle__link">Customizability</a>
+                    <p class="item-middle__desc">Don't be distracted by criticism. Remember the only taste of success some people.</p>
+                </div>
+                <!--end .item-middle-->
+            </div>
+        </div>
+        <!--end .middle-->
+    </div>
+</section>
+<!--end #home-middle-->
+
+<section id="home-comment">
+        <div id="myCarousel-cmt" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!--<ol class="carousel-indicators">-->
+                <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+            <!--</ol>-->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active container">
+                    <div class="row comment">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="comment-img">
+                                <a href="#" class="comment-img__link"><img src="images/user.png"  class="img-circle" width="150px" height="150px" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <div class="comment-content">
+                                <div class="comment-icon"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                                <p class="comment-detail">
+                                    I wanted to mention that these days, when the opposite of good customer and tech
+                                    support tends to be the norm, it's always great having a team like you guyss at Supplo!
+                                    So, be sure that I'll always spread the word about how good your product is and the extraordinary
+                                    level of support that you provide any time there is any need for it.
+                                </p>
+                                <p class="comment-author"><b>Ollie Schneider</b>-CEO DeerCreative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item container">
+                    <div class="row comment ">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="comment-img">
+                                <a href="#" class="comment-img__link"><img src="images/user.png"  class="img-circle" width="150px" height="150px" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <div class="comment-content">
+                                <div class="comment-icon"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                                <p class="comment-detail">
+                                    I wanted to mention that these days, when the opposite of good customer and tech
+                                    support tends to be the norm, it's always great having a team like you guyss at Supplo!
+                                    So, be sure that I'll always spread the word about how good your product is and the extraordinary
+                                    level of support that you provide any time there is any need for it.
+                                </p>
+                                <p class="comment-author"><b>Ollie Schneider</b>-CEO DeerCreative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item container">
+                    <div class="row comment">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="comment-img">
+                                <a href="#" class="comment-img__link"><img src="images/user.png"  class="img-circle" width="150px" height="150px" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <div class="comment-content">
+                                <div class="comment-icon"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                                <p class="comment-detail">
+                                    I wanted to mention that these days, when the opposite of good customer and tech
+                                    support tends to be the norm, it's always great having a team like you guyss at Supplo!
+                                    So, be sure that I'll always spread the word about how good your product is and the extraordinary
+                                    level of support that you provide any time there is any need for it.
+                                </p>
+                                <p class="comment-author"><b>Ollie Schneider</b>-CEO DeerCreative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!--end #home-comment-->
+
+<section id="home-contact-cust">
+    <div class="container">
+        <div class="contact-cust text-center">
+            <div class="contact-cust-header">
+                <h4 class="contact-title">Are you ready to be success with us ?</h4>
+                <p class="contact-msg">Tell us about your story and your project</p>
+            </div>
+            <!--end .contact-cust-header-->
+
+            <div class="contact-cust-info">
+                <form action="" class="form-info">
+                    <input type="text" class="form-info__input" name="name" placeholder="Your Name">
+                    <input type="text" class="form-info__input" name="email" placeholder="Email Address">
+                    <input type="text" class="form-info__input" name="phone" placeholder="Your Phone">
+                    <input type="submit" class="form-info__submit" name="btn_submit" value="Subcribe">
+                </form>
+            </div>
+        </div>
+
+</section>
+<!--end #home-contact-cust-->
+
+<section id="home-brand" >
+    <div class="container">
+        <div class="brand">
+            <div id="owl-brand-slider" class="owl-carousel owl-theme">
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand1.png" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand2.png" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand1.png" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand2.png" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand1.png" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand2.png" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="#" class="brand__link"><img src="images/brand/brand1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end #home-brand-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-contact">
+                <a href="#" class="footer-logo"><img src="images/logo.png" alt=""></a>
+                <div class="footer-social social-network">
+                    <a href="#" class="footer-network social-network__link "><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-network social-network__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-network social-network__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-network social-network__link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-network social-network__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <!--end .social-network-->
+                <p class="copyright">
+                    Copyright 2017 DeerCreative Inc.
+                </p>
+            </div>
+            <!--end .footer-contact-->
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-info">
+                <p class="phone-info">(800) 686-6688</p>
+                <p class="email-info">info.deercreative@gmail.com</p>
+                <p class="address-info">40 Baria Street 133/2<br> NewYork City, US</p>
+            </div>
+            <!--end .footer-info-->
+
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 footer-menu">
+                <ul class="list-menu-footer">
+                    <li class="item-menu-footer"><a href="#" class="menu__link">Home</a></li>
+                    <li class="item-menu-footer"><a href="#" class="menu__link">About</a></li>
+                    <li class="item-menu-footer"><a href="#" class="menu__link">Services</a></li>
+                    <li class="item-menu-footer"><a href="#" class="menu__link">Work</a></li>
+                </ul>
+            </div>
+            <!--end .footer-menu-->
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 footer-support">
+                <ul class="list-support">
+                    <li class="item-support"><a href="#" class="item-support__link">Disclaimer</a></li>
+                    <li class="item-support"><a href="#" class="item-support__link">Privacy</a></li>
+                    <li class="item-support"><a href="#" class="item-support__link">Advertiserment</a></li>
+                    <li class="item-support"><a href="#" class="item-support__link">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>
